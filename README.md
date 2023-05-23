@@ -4,7 +4,7 @@ MIDEZAcrypt es una aplicación diseñada con la finalidad específica de encript
 complejos y laboriosos para dicho propósito. Se trata de una herramienta simple y concreta, especialmente concebida para el 
 envío de notas cifradas.
 
-## Las "llaves" de encriptación que utilizaremos son las siguientes:
+## Las "llaves" de encriptación son las siguientes:
 
 ```
 La letra "e" es convertida para "enter"
