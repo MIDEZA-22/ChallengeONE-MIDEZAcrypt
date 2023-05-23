@@ -53,7 +53,4 @@ Por ejemplo:
 
 [Mijail Denis Zavala Llanco](https://github.com/MIDEZA-22/)
 
-## Link
-
-[MIDEZAcrypt](https://mideza-22.github.io/ChallengeONE-MIDEZAcrypt/)
 
