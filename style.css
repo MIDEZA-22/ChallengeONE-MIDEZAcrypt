@@ -1,0 +1,120 @@
+header {
+    width: 100%;
+    height: 96px;
+    background-color: #AB6049;
+}
+
+header h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #FFFFFF;
+    text-align: center;
+    line-height: 96px;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+main {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 490px;
+    background-color: #322C2C;
+}
+
+main .box-1 {
+    display: inline-block;
+    width: 410px;
+    height: 390px;
+    margin: 50px;
+}
+
+main .box-2 {
+    display: inline-block;
+    width: 245px;
+    height: 390px;
+    margin: 50px;
+}
+
+main .box-3 {
+    display: inline-block;
+    width: 410px;
+    height: 390px;
+    margin: 50px;
+}
+
+main .box-1 input {
+    font-size: 20px;
+    width: 390px;
+    height: 360px;
+    background-color: #EC7854;
+    color: #FFFFFF;
+    border: none;
+    padding: 10px;
+}
+
+main .box-1 img {
+    width: 30px;
+    height: 30px;
+}
+
+main .box-1 p {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 13px;
+    font-size: 15px;
+    color: #FFFFFF;
+}
+
+main .box-2 input {
+    display: block;
+    font-size: 15px;
+    color: #FFFFFF;
+    border-color: #AB6049;
+    background-color: #AB6049;
+    border-radius: 15px;
+    width: 245px;
+    height: 50px;
+    margin-top: 96px;
+}
+
+main .box-3 textarea {
+    font-size: 20px;
+    width: 390px;
+    height: 270px;
+    background-color: #EC7854;
+    border: none;
+    resize: none;
+    color: #FFFFFF;
+    padding: 10px;
+}
+
+main .box-3 input {
+    display: block;
+    font-size: 15px;
+    margin-top: 60px;
+    color: #000000;
+    border-color: #FFFFFF;
+    background-color: #FFFFFF;
+    border-radius: 15px;
+    width: 410px;
+    height: 50px;
+}
+
+footer {
+    width: 100%;
+    height: 76px;
+    background-color: #AB6049;
+}
+
+footer p {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #FFFFFF;
+    text-align: center;
+    line-height: 76px;
+    font-size: 20px;
+}
+
+footer p span {
+font-weight: bold;
+}
