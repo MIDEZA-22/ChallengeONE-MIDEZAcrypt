@@ -53,4 +53,7 @@ Por ejemplo:
 
 [Mijail Denis Zavala Llanco](https://github.com/MIDEZA-22/)
 
+## Licencia
+
+Este proyecto está bajo la Licencia [MIT](LICENSE).
 
