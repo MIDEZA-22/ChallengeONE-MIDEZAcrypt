@@ -51,7 +51,7 @@ Por ejemplo:
 
 ## Autor:
 
-[Mijail Denis Zavala Llanco](https://github.com/MIDEZA-22/)
+[Mijail Denis Zavala LLanco](https://www.linkedin.com/in/mideza22)
 
 ## Licencia
 
