@@ -4,9 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="author" content="MIJAIL DENIS ZAVALA LLANCO | MIDEZA" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="MIDEZAcrypt es una aplicación para encriptar y desencriptar texto de manera segura.">
+    <meta name="keywords" content="encriptar, desencriptar, seguridad, texto, aplicación, MIDEZAcrypt">
+    <meta name="author" content="Mijail Denis Zavala Llanco">
     <title>MIDEZAcrypt</title>
-    <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -16,18 +18,22 @@
     </header>
 
     <main>
-        <div class="box-1">
-            <input class="input" type="text" placeholder="Ingrese el texto aquí..." oninput="validarTexto(this)">
-            <img src="img/signo-de-exclamacion.png" alt="signo-de-exclamacion">
-            <p>Solo letras minúsculas y sin acentos</p>
-        </div>
-        <div class="box-2">
-            <input class="btn-encriptar" type="button" value="Encriptar" onclick="btnEncriptar()">
-            <input class="btn-desencriptar" type="button" value="Desencriptar" onclick="btnDesencriptar()">
-        </div>
-        <div class="box-3">
-            <textarea class="textarea" readonly></textarea>
-            <input type="button" value="Copiar" onclick="btnCopiar()">
+        <div class="container">
+            <div class="box-1">
+                <input class="input" type="text" placeholder="Ingrese el texto aquí..." oninput="validarTexto(this)">
+                <div class="icon-text">
+                    <img src="img/signo-de-exclamacion.png" alt="signo-de-exclamacion">
+                    <p>Solo letras minúsculas y sin acentos</p>
+                </div>
+            </div>
+            <div class="box-2">
+                <input class="btn-encriptar" type="button" value="Encriptar" onclick="btnEncriptar()">
+                <input class="btn-desencriptar" type="button" value="Desencriptar" onclick="btnDesencriptar()">
+            </div>
+            <div class="box-3">
+                <textarea class="textarea" readonly></textarea>
+                <input type="button" value="Copiar" onclick="btnCopiar()">
+            </div>
         </div>
     </main>
 

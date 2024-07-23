@@ -1,59 +1,73 @@
 # MIDEZAcrypt
 
-MIDEZAcrypt es una aplicación diseñada con la finalidad específica de encriptar textos, evitando la dependencia de programas 
-complejos y laboriosos para dicho propósito. Se trata de una herramienta simple y concreta, especialmente concebida para el 
-envío de notas cifradas.
+MIDEZAcrypt es una aplicación web diseñada para encriptar y desencriptar texto de manera segura. Utiliza una interfaz moderna y sencilla para facilitar su uso. Este proyecto está desarrollado utilizando HTML, CSS y JavaScript.
 
-## Las "llaves" de encriptación son las siguientes:
+## Características
 
-```
-La letra "e" es convertida para "enter"
-```
+- **Encriptar y Desencriptar Texto**: Permite encriptar y desencriptar texto usando un sencillo botón.
+- **Validación de Entrada**: Asegura que solo se ingresen letras minúsculas sin acentos.
+- **Copiar al Portapapeles**: Opción para copiar el texto encriptado o desencriptado al portapapeles.
+- **Interfaz Amigable**: Diseño responsivo que se adapta a diferentes tamaños de pantalla.
 
-```
-La letra "i" es convertida para "imes"
-```
+## Estructura del Proyecto
 
-```
-La letra "a" es convertida para "ai"
-```
+El proyecto se compone de los siguientes archivos:
 
-```
-La letra "o" es convertida para "ober"
-```
+- `index.html`: Archivo principal que contiene la estructura de la aplicación.
+- `style.css`: Archivo de estilos que define la apariencia de la aplicación.
+- `script.js`: Archivo de JavaScript que contiene la lógica para encriptar, desencriptar y copiar texto.
 
-```
-La letra "u" es convertida para "ufat"
-```
+## Instrucciones de Instalación
 
-## Requisitos:
+1. **Clona el repositorio**:
+    ```bash
+    git clone https://github.com/MIDEZA-22/ChallengeONE-MIDEZAcrypt
+    ```
 
-- Debe funcionar solo con letras minúsculas.
-- No deben ser utilizados letras con acentos ni caracteres especiales.
-- Debe ser posible convertir una palabra para la versión encriptada también devolver una palabra encriptada para su versión original.
+2. **Navega al directorio del proyecto**:
+    ```bash
+    cd <DIRECTORIO_DEL_PROYECTO>
+    ```
 
-Por ejemplo:
+3. **Abre el archivo `index.html` en un navegador web**.
 
-```
-"gato" => "gaitober"
-```
+## Uso
 
-```
-"gaitober" => "gato"
-```
+1. **Ingresar Texto**: Escribe el texto que deseas encriptar en el campo de texto.
+2. **Encriptar o Desencriptar**: Haz clic en el botón correspondiente para encriptar o desencriptar el texto.
+3. **Copiar al Portapapeles**: Haz clic en el botón "Copiar" para copiar el texto resultante al portapapeles.
 
-- La página debe tener campos para inserción del texto que será encriptado o desencriptado, y el usuario debe poder escoger entre as dos opciones.
-- El resultado debe ser mostrado en la pantalla.
+## Diseño y Estilo
 
-## Extras:
+El diseño de la aplicación está optimizado para diferentes tamaños de pantalla utilizando media queries. La interfaz cuenta con una estética moderna, con un esquema de colores oscuros y acentos en naranja.
 
-- Un botón que copie el texto encriptado/desencriptado para la sección de transferencia, o sea que tenga la misma funcionalidad del ctrl+C o de la opción "copiar" del menú de las aplicaciones.
+- **Header**: Contiene el título de la aplicación.
+- **Main**: Sección principal con los controles para encriptar, desencriptar y copiar texto.
+- **Footer**: Información de derechos de autor y créditos.
 
-## Autor:
+## Contribuciones
 
-[Mijail Denis Zavala LLanco](https://www.linkedin.com/in/mideza22)
+Las contribuciones al proyecto son bienvenidas. Para contribuir, por favor sigue estos pasos:
+
+1. **Haz un Fork del Repositorio**.
+2. **Crea una Rama** para tus cambios:
+    ```bash
+    git checkout -b nombre-de-la-rama
+    ```
+3. **Realiza tus Cambios** y haz Commit:
+    ```bash
+    git commit -am "Agrega nueva funcionalidad"
+    ```
+4. **Haz Push a tu Rama**:
+    ```bash
+    git push origin nombre-de-la-rama
+    ```
+5. **Crea un Pull Request** en el repositorio principal.
 
 ## Licencia
 
-Este proyecto está bajo la Licencia [MIT](LICENSE).
+Este proyecto está licenciado bajo la Licencia MIT. Consulta el archivo [LICENSE](LICENSE) para más detalles.
 
+---
+
+Desarrollado por **Mijail Denis Zavala Llanco** | [MIDEZA](https://mideza-22.github.io/Mijail-Denis-Zavala-Llanco---CV/)

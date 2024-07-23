@@ -1,120 +1,243 @@
+/* Estilos base */
+html, body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    height: 100%;
+}
+
+/* Container general */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Asegura que el body ocupe al menos toda la altura del viewport */
+}
+
+/* Header */
 header {
     width: 100%;
     height: 96px;
     background-color: #AB6049;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 header h1 {
-    font-family: Arial, Helvetica, sans-serif;
     color: #FFFFFF;
-    text-align: center;
-    line-height: 96px;
     font-weight: bold;
-    font-size: 40px;
+    font-size: 2rem;
+    text-align: center;
 }
 
+/* Main */
 main {
-    font-family: Arial, Helvetica, sans-serif;
+    flex: 1; /* Ocupa el espacio restante disponible */
     display: flex;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
     width: 100%;
-    height: 490px;
-    background-color: #322C2C;
+    background-color: #1F1F1F; /* Color oscuro de fondo */
+    padding: 20px;
+    box-sizing: border-box;
 }
 
-main .box-1 {
-    display: inline-block;
-    width: 410px;
-    height: 390px;
-    margin: 50px;
+/* Contenedor de columnas */
+.container {
+    display: flex;
+    width: 100%;
+    max-width: 1200px; /* Máximo ancho del contenedor */
+    height: 100%; /* Ocupa toda la altura del main */
+    gap: 20px; /* Espaciado entre cajas */
 }
 
-main .box-2 {
-    display: inline-block;
-    width: 245px;
-    height: 390px;
-    margin: 50px;
+/* Contenedores dentro de container */
+.box-1,
+.box-2,
+.box-3 {
+    flex: 1; /* Permite que los boxes ocupen el mismo ancho */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Centra el contenido verticalmente */
+    box-sizing: border-box;
+    padding: 20px; /* Añadido para espaciado interno */
+    border-radius: 10px; /* Bordes redondeados */
+    height: 100%; /* Asegura que los boxes ocupen toda la altura disponible */
+    background-color: #2C2C2C; /* Fondo oscuro de las columnas */
+    color: #FFFFFF; /* Color del texto */
 }
 
-main .box-3 {
-    display: inline-block;
-    width: 410px;
-    height: 390px;
-    margin: 50px;
+/* Ajustes de tamaño y espaciado de los inputs y textarea */
+.box-1 input,
+.box-3 textarea {
+    width: 100%;
+    padding: 12px; /* Aumento del padding para mayor tamaño */
+    border: 1px solid #AB6049;
+    border-radius: 5px;
+    font-size: 1.1rem; /* Aumento del tamaño de la fuente */
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    resize: none; /* Evita el cambio de tamaño del textarea */
+    background-color: #3A3A3A; /* Fondo oscuro para inputs y textarea */
+    color: #FFFFFF; /* Color del texto */
 }
 
-main .box-1 input {
-    font-size: 20px;
-    width: 390px;
-    height: 360px;
-    background-color: #EC7854;
+/* Ajustar altura del textarea */
+.box-3 textarea {
+    height: 200px; /* Altura fija para el textarea aumentada */
+}
+
+/* Ajustar altura del input para que coincida con la del textarea */
+.box-1 input {
+    height: 200px; /* Altura fija para el input para que coincida con el textarea */
+}
+
+/* Contenedor de icono y texto */
+.icon-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; /* Espaciado entre el icono y el texto */
+}
+
+/* Imagen */
+.icon-text img {
+    width: 30px; /* Tamaño pequeño del icono */
+    height: auto; /* Mantiene la proporción del icono */
+}
+
+/* Estilo del párrafo */
+.icon-text p {
+    font-size: 0.875rem;
+    color: #AB6049;
+}
+
+/* Botones */
+.box-2 input {
+    font-size: 1rem;
     color: #FFFFFF;
-    border: none;
-    padding: 10px;
-}
-
-main .box-1 img {
-    width: 30px;
-    height: 30px;
-}
-
-main .box-1 p {
-    display: inline-block;
-    vertical-align: top;
-    margin-top: 13px;
-    font-size: 15px;
-    color: #FFFFFF;
-}
-
-main .box-2 input {
-    display: block;
-    font-size: 15px;
-    color: #FFFFFF;
-    border-color: #AB6049;
     background-color: #AB6049;
-    border-radius: 15px;
-    width: 245px;
-    height: 50px;
-    margin-top: 96px;
-}
-
-main .box-3 textarea {
-    font-size: 20px;
-    width: 390px;
-    height: 270px;
-    background-color: #EC7854;
     border: none;
-    resize: none;
-    color: #FFFFFF;
-    padding: 10px;
-}
-
-main .box-3 input {
-    display: block;
-    font-size: 15px;
-    margin-top: 60px;
-    color: #000000;
-    border-color: #FFFFFF;
-    background-color: #FFFFFF;
-    border-radius: 15px;
-    width: 410px;
+    border-radius: 5px;
+    width: 100%;
     height: 50px;
+    margin-top: 10px;
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    transition: background-color 0.3s, box-shadow 0.3s; /* Transición suave para el fondo y la sombra */
 }
 
+.box-2 input:hover {
+    background-color: #8D4C3F; /* Cambia el color de fondo al pasar el ratón */
+}
+
+.box-2 input:active {
+    background-color: #6F3B2A; /* Cambia el color de fondo al hacer clic */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra al hacer clic */
+}
+
+/* Botón Copiar */
+.box-3 input[type="button"] {
+    background-color: #AB6049; /* Color de fondo del botón Copiar acorde al sistema */
+    border: none;
+    height: 40px; /* Botón más delgado */
+    font-size: 1rem; /* Tamaño de fuente ajustado */
+    border-radius: 5px;
+    color: #FFFFFF;
+    margin-top: 10px;
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    transition: background-color 0.3s, box-shadow 0.3s; /* Transición suave para el fondo y la sombra */
+    width: 100%; /* Asegura que el botón tenga el mismo ancho que el textarea */
+}
+
+.box-3 input[type="button"]:hover {
+    background-color: #8D4C3F; /* Cambia el color de fondo al pasar el ratón */
+}
+
+.box-3 input[type="button"]:active {
+    background-color: #6F3B2A; /* Cambia el color de fondo al hacer clic */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra al hacer clic */
+}
+
+/* Footer */
 footer {
     width: 100%;
     height: 76px;
     background-color: #AB6049;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    box-sizing: border-box;
 }
 
 footer p {
-    font-family: Arial, Helvetica, sans-serif;
     color: #FFFFFF;
+    font-size: 1.25rem;
     text-align: center;
-    line-height: 76px;
-    font-size: 20px;
+    margin: 0;
 }
 
-footer p span {
-    font-weight: bold;
+/* Responsividad */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    .container {
+        flex-direction: column; /* Cambia a columna en pantallas pequeñas */
+        gap: 20px; /* Espaciado entre cajas en pantallas pequeñas */
+    }
+
+    .box-1,
+    .box-2,
+    .box-3 {
+        width: 100%; /* Ocupa el 100% del ancho en pantallas pequeñas */
+    }
+
+    .box-1 input,
+    .box-3 textarea {
+        font-size: 1rem;
+    }
+
+    .box-2 input {
+        font-size: 1rem;
+    }
+
+    footer p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.25rem;
+    }
+
+    .container {
+        flex-direction: column; /* Cambia a columna en pantallas muy pequeñas */
+        gap: 15px; /* Espaciado entre cajas en pantallas muy pequeñas */
+    }
+
+    .box-1,
+    .box-2,
+    .box-3 {
+        width: 100%; /* Ocupa el 100% del ancho en pantallas muy pequeñas */
+    }
+
+    .box-1 input,
+    .box-3 textarea {
+        font-size: 0.875rem;
+    }
+
+    .box-2 input {
+        font-size: 0.875rem;
+    }
+
+    footer p {
+        font-size: 0.875rem;
+    }
 }
