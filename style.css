@@ -72,7 +72,7 @@ main {
 }
 
 /* Ajustes de tamaño y espaciado de los inputs y textarea */
-.box-1 input,
+.box-1 textarea,
 .box-3 textarea {
     width: 100%;
     padding: 12px; /* Aumento del padding para mayor tamaño */
@@ -82,18 +82,14 @@ main {
     box-sizing: border-box;
     margin-bottom: 10px;
     resize: none; /* Evita el cambio de tamaño del textarea */
-    background-color: #3A3A3A; /* Fondo oscuro para inputs y textarea */
+    background-color: #3A3A3A; /* Fondo oscuro para textarea */
     color: #FFFFFF; /* Color del texto */
 }
 
 /* Ajustar altura del textarea */
-.box-3 textarea {
-    height: 200px; /* Altura fija para el textarea aumentada */
-}
-
-/* Ajustar altura del input para que coincida con la del textarea */
-.box-1 input {
-    height: 200px; /* Altura fija para el input para que coincida con el textarea */
+.box-3 textarea,
+.box-1 textarea {
+    height: 200px; /* Altura fija para el textarea */
 }
 
 /* Contenedor de icono y texto */
@@ -198,7 +194,7 @@ footer p {
         width: 100%; /* Ocupa el 100% del ancho en pantallas pequeñas */
     }
 
-    .box-1 input,
+    .box-1 textarea,
     .box-3 textarea {
         font-size: 1rem;
     }
@@ -209,35 +205,5 @@ footer p {
 
     footer p {
         font-size: 1rem;
-    }
-}
-
-@media (max-width: 480px) {
-    header h1 {
-        font-size: 1.25rem;
-    }
-
-    .container {
-        flex-direction: column; /* Cambia a columna en pantallas muy pequeñas */
-        gap: 15px; /* Espaciado entre cajas en pantallas muy pequeñas */
-    }
-
-    .box-1,
-    .box-2,
-    .box-3 {
-        width: 100%; /* Ocupa el 100% del ancho en pantallas muy pequeñas */
-    }
-
-    .box-1 input,
-    .box-3 textarea {
-        font-size: 0.875rem;
-    }
-
-    .box-2 input {
-        font-size: 0.875rem;
-    }
-
-    footer p {
-        font-size: 0.875rem;
     }
 }
