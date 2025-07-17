@@ -70,4 +70,4 @@ Este proyecto está licenciado bajo la Licencia MIT. Consulta el archivo [LICENS
 
 ---
 
-Desarrollado por [Mijail Denis Zavala Llanco](https://mideza-22.github.io/Mijail-Denis-Zavala-Llanco---CV/)
+Desarrollado por [Mijail Zavala Llanco](https://github.com/MIDEZA-22/MIDEZA-CV/)
